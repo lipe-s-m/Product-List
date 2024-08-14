@@ -1,0 +1,18 @@
+
+
+#lista-sobremesas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 2rem;
+
+}
+
+.card-sobremesa{
+    width: 30%;
+
+}
+
+.card-sobremesa > img{
+    height: 16rem;
+}

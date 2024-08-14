@@ -1,0 +1,12 @@
+@import url("./../../global/global.css");
+@import url("./partials/partials.css");
+
+body{
+    background-color: var(--rose-50);
+}
+
+main{
+    display: flex;
+    padding: 5rem;
+}
+
