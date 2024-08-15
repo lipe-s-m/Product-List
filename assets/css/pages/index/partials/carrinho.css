@@ -1,6 +1,12 @@
 #carrinho{
     background-color: white;
-    width: 40%;
+    width: 30vw;
+    min-width: 290px;
     height: 100%;
     padding: 2rem;
+}
+
+#carrinho > h2{
+    color: var(--red);
+    font-weight: 700;
 }
