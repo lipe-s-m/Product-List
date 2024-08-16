@@ -5,6 +5,7 @@ body{
     background-color: var(--rose-50);
 }
 
+
 main{
     display: flex;
     padding: 5rem;

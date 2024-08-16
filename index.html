@@ -7,6 +7,7 @@
   <title>Lista de Produtos</title>
   <meta name="description" content="Esse sistema consiste em uma simulação de e-commerce." />
   <link rel="stylesheet" href="./assets/css/pages/index/style.css">
+  <script type="module" src="assets/js/pages/index/script.js"  defer></script>
 </head>
 
 <body>
@@ -15,11 +16,17 @@
       <h1>Sobremesas</h1>
 
       <div id="lista-sobremesas">
-        <article class="card-sobremesa">
+        <article id="waffle" class="card-sobremesa">
           <img src="./assets/images/image-waffle-desktop.jpg" alt="waffle ícone" />
           <div class="adicionar-carrinho">
-            <span><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
-            Adicionar ao Carrinho</span>
+            <span onclick="adicionarProduto('waffle')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
+          </div>
+          <div class="modificar-carrinho hidden">
+            <span onclick="adicionarProduto('waffle')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
           </div>
           <div class="descricao-sobremesa">
             <p>Waffle</p>
@@ -27,11 +34,18 @@
             <p>R$ 6,50</p>
           </div>
         </article>
-        <article class="card-sobremesa">
+
+        <article id="basklava" class="card-sobremesa">
           <img src="./assets/images/image-baklava-desktop.jpg" alt="baklava ícone" />
           <div class="adicionar-carrinho">
-            <span> <img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
-              Adicionar ao Carrinho</span>
+            <span onclick="adicionarProduto('basklava')"> <img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
+          </div>
+          <div class="modificar-carrinho hidden">
+            <span onclick="adicionarProduto('basklava')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
           </div>
           <div class="descricao-sobremesa">
             <p>Baklava</p>
@@ -40,11 +54,17 @@
           </div>
         </article>
 
-        <article class="card-sobremesa">
+        <article id="brownie" class="card-sobremesa">
           <img src="./assets/images/image-brownie-desktop.jpg" alt="brownie ícone" />
           <div class="adicionar-carrinho">
-            <span><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
-            Adicionar ao Carrinho</span>
+            <span onclick="adicionarProduto('brownie')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
+          </div>
+          <div class="modificar-carrinho hidden">
+            <span onclick="adicionarProduto('brownie')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
           </div>
           <div class="descricao-sobremesa">
             <p>Brownie</p>
@@ -52,11 +72,18 @@
             <p>R$ 5,50</p>
           </div>
         </article>
-        <article class="card-sobremesa">
+
+        <article id="bolo" class="card-sobremesa">
           <img src="./assets/images/image-cake-desktop.jpg" alt="cake ícone" />
           <div class="adicionar-carrinho">
-            <span><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
-            Adicionar ao Carrinho</span>
+            <span onclick="adicionarProduto('bolo')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
+          </div>
+          <div class="modificar-carrinho hidden">
+            <span onclick="adicionarProduto('bolo')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
           </div>
           <div class="descricao-sobremesa">
             <p>Bolo</p>
@@ -64,23 +91,38 @@
             <p>R$ 4,50</p>
           </div>
         </article>
-        <article class="card-sobremesa">
+
+        <article id="creme" class="card-sobremesa">
           <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="creme-brulee ícone" />
           <div class="adicionar-carrinho">
-            <span><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
-            Adicionar ao Carrinho</span>
+            <span onclick="adicionarProduto('creme')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
           </div>
+          <div class="modificar-carrinho hidden">
+            <span onclick="adicionarProduto('creme')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
+          </div>
+
           <div class="descricao-sobremesa">
             <p>Crème Brûlée</p>
             <p>Vanilla Bean Crème Brûlée</p>
             <p>R$ 7,00 </p>
           </div>
         </article>
-        <article class="card-sobremesa">
+
+        <article id="macaron" class="card-sobremesa">
           <img src="./assets/images/image-macaron-desktop.jpg" alt="macaron ícone" />
           <div class="adicionar-carrinho">
-            <span><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
-            Adicionar ao Carrinho</span>
+            <span onclick="adicionarProduto('macaron')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
+          </div>
+          <div class="modificar-carrinho hidden">
+            <span onclick="adicionarProduto('macaron')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
           </div>
           <div class="descricao-sobremesa">
             <p>Macaron</p>
@@ -88,23 +130,37 @@
             <p>R$ 8,00</p>
           </div>
         </article>
-        <article class="card-sobremesa">
+
+        <article id="torta" class="card-sobremesa">
           <img src="./assets/images/image-meringue-desktop.jpg" alt="meringue ícone" />
           <div class="adicionar-carrinho">
-            <span><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
-            Adicionar ao Carrinho</span>
+            <span onclick="adicionarProduto('torta')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
+          </div>
+          <div class="modificar-carrinho hidden">
+            <span onclick="adicionarProduto('torta')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
           </div>
           <div class="descricao-sobremesa">
-            <p>Pie</p>
+            <p>Torta</p>
             <p>Torta de Limão com Merengue</p>
             <p>R$ 5,00</p>
           </div>
         </article>
-        <article class="card-sobremesa">
+
+        <article id="pannaCotta" class="card-sobremesa">
           <img src="./assets/images/image-panna-cotta-desktop.jpg" alt="panna-cotta ícone" />
           <div class="adicionar-carrinho">
-            <span><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
-            Adicionar ao Carrinho</span>
+            <span onclick="adicionarProduto('pannaCotta')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
+          </div>
+          <div class="modificar-carrinho hidden">
+            <span onclick="adicionarProduto('pannaCotta')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
           </div>
           <div class="descricao-sobremesa">
             <p>Panna Cotta</p>
@@ -112,11 +168,18 @@
             <p>R$ 6,50</p>
           </div>
         </article>
-        <article class="card-sobremesa">
+
+        <article id="tiramisu" class="card-sobremesa">
           <img src="./assets/images/image-tiramisu-desktop.jpg" alt="tiramisu ícone" />
           <div class="adicionar-carrinho">
-            <span><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
-            Adicionar ao Carrinho</span>
+            <span onclick="adicionarProduto('tiramisu')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
+          </div>
+          <div class="modificar-carrinho hidden">
+            <span onclick="adicionarProduto('tiramisu')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+              <p>Adicionar ao Carrinho</p>
+            </span>
           </div>
           <div class="descricao-sobremesa">
             <p>Tiramisu</p>
@@ -124,7 +187,7 @@
             <p>R$ 5,50</p>
           </div>
         </article>
-        
+
       </div>
     </section>
 
