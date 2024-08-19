@@ -1,3 +1,4 @@
+import obterProdutosCarrinho from "./carrinho.js";
 import {
   decrementarUnidadeProduto,
   incrementarUnidadeProduto,
@@ -22,8 +23,6 @@ class Carrinho {
     if (index !== -1) {
       this.produtos.splice(index, 1);
     }
-
-    console.log(this.produtos);
   }
   obterProdutos() {
     return this.produtos;
@@ -94,4 +93,6 @@ window.adicionarProduto = function (product) {
   qntProdutos.appendChild(addProductImage);
 
   i++;
+  obterProdutosCarrinho();
+
 };

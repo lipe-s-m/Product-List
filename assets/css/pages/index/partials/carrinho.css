@@ -3,10 +3,16 @@
     width: 30vw;
     min-width: 290px;
     height: 100%;
-    padding: 2rem;
+    padding: 2rem 2rem 3rem;
 }
 
 #carrinho > h2{
     color: var(--red);
     font-weight: 700;
+}
+
+#carrinho > #elementos-carrinho{
+    height: 20rem;
+    display: block;
+    flex-direction: row;
 }

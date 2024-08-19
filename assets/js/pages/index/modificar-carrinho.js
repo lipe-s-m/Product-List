@@ -1,3 +1,4 @@
+import obterProdutosCarrinho from "./carrinho.js";
 import DataManager from "./script.js";
 
 export function incrementarUnidadeProduto(product, newProduct) {
@@ -8,6 +9,7 @@ export function incrementarUnidadeProduto(product, newProduct) {
     .querySelector("span");
   newProduct.unidadeProduto++;
   qntProdutosLabel.textContent = newProduct.unidadeProduto;
+  obterProdutosCarrinho();
 }
 
 export function decrementarUnidadeProduto(product, newProduct) {
@@ -30,4 +32,5 @@ export function decrementarUnidadeProduto(product, newProduct) {
       .querySelector(".adicionar-carrinho");
     cardAddProduto.hidden = false;
   }
+  obterProdutosCarrinho();
 }
