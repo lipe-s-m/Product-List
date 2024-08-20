@@ -2,7 +2,7 @@ import obterProdutosCarrinho from "./carrinho.js";
 import DataManager from "./script.js";
 
 export function incrementarUnidadeProduto(product, newProduct) {
-    DataManager.adicionarProduto(newProduct);
+  DataManager.adicionarProduto(newProduct);
   const qntProdutosLabel = document
     .getElementById(product)
     .querySelector(".modificar-carrinho")
@@ -13,7 +13,7 @@ export function incrementarUnidadeProduto(product, newProduct) {
 }
 
 export function decrementarUnidadeProduto(product, newProduct) {
-    DataManager.removerProduto(newProduct);
+  DataManager.removerProduto(newProduct);
   const qntProdutosLabel = document
     .getElementById(product)
     .querySelector(".modificar-carrinho")

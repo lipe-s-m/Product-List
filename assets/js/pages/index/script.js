@@ -8,12 +8,16 @@ class Carrinho {
   constructor() {
     if (Carrinho.instance) return Carrinho.instance;
     this.produtos = [];
+    this.valorCompra = 0.0;
     Carrinho.instance = this;
   }
 
   adicionarProduto(produto) {
     this.produtos.push(produto);
     console.log(this.produtos);
+    let precoProduto = produto.precoProduto;
+    precoProduto = precoProduto.replace("R$", "").replace(",", ".").trim();
+    this.valorCompra += parseFloat(precoProduto);
   }
   removerProduto(produto) {
     const index = this.produtos.findIndex((product) => {
@@ -22,6 +26,10 @@ class Carrinho {
 
     if (index !== -1) {
       this.produtos.splice(index, 1);
+      let precoProduto = produto.precoProduto;
+      precoProduto = precoProduto.replace("R$", "").replace(",", ".").trim();
+      this.valorCompra -= parseFloat(precoProduto);
+      console.log(this.produtos);
     }
   }
   obterProdutos() {
@@ -94,5 +102,4 @@ window.adicionarProduto = function (product) {
 
   i++;
   obterProdutosCarrinho();
-
 };
