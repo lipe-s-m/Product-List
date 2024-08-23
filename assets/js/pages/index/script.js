@@ -3,6 +3,7 @@ import {
   decrementarUnidadeProduto,
   incrementarUnidadeProduto,
 } from "./modificar-carrinho.js";
+import { obterProdutosCompraConfirmada } from "./compra-confirmada.js";
 
 class Carrinho {
   constructor() {
@@ -40,6 +41,10 @@ class Carrinho {
 const DataManager = new Carrinho();
 export default DataManager;
 var i = 0;
+
+const botao = document.getElementById("confirmar-compra").querySelector("button");
+botao.addEventListener("click", obterProdutosCompraConfirmada);
+
 
 window.adicionarProduto = function (product) {
   const cardAddProduto = document

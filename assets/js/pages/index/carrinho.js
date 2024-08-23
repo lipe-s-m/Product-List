@@ -78,7 +78,7 @@ export default function obterProdutosCarrinho() {
 
     precoTotalCarrinho.innerHTML = "";
     precoTotalCarrinho.appendChild(
-      document.createTextNode(`R$ ${DataManager.valorCompra}`)
+      document.createTextNode(`R$ ${(DataManager.valorCompra.toFixed(2).replace(".", ","))}`)
     );
   } 
   
