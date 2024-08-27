@@ -17,7 +17,7 @@
 
       <div id="lista-sobremesas">
         <article id="waffle" class="card-sobremesa">
-          <img src="./assets/images/image-waffle-desktop.jpg" alt="waffle ícone">
+          <img src="./assets/images/image-waffle-desktop.jpg" alt="waffle ícone" class="imagem-produto">
           <div class="adicionar-carrinho">
             <span onclick="adicionarProduto('waffle')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho">
               Adicionar ao Carrinho
@@ -35,15 +35,15 @@
           </div>
         </article>
 
-        <article id="basklava" class="card-sobremesa">
-          <img src="./assets/images/image-baklava-desktop.jpg" alt="baklava ícone">
+        <article id="baklava" class="card-sobremesa">
+          <img src="./assets/images/image-baklava-desktop.jpg" alt="baklava ícone" class="imagem-produto">
           <div class="adicionar-carrinho">
-            <span onclick="adicionarProduto('basklava')"> <img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho">
+            <span onclick="adicionarProduto('baklava')"> <img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho">
               Adicionar ao Carrinho
             </span>
           </div>
           <div class="modificar-carrinho hidden">
-            <span onclick="adicionarProduto('basklava')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho">
+            <span onclick="adicionarProduto('baklava')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho">
               Adicionar ao Carrinho
             </span>
           </div>
@@ -55,7 +55,7 @@
         </article>
 
         <article id="brownie" class="card-sobremesa">
-          <img src="./assets/images/image-brownie-desktop.jpg" alt="brownie ícone">
+          <img src="./assets/images/image-brownie-desktop.jpg" alt="brownie ícone" class="imagem-produto">
           <div class="adicionar-carrinho">
             <span onclick="adicionarProduto('brownie')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho">
               Adicionar ao Carrinho
@@ -74,7 +74,7 @@
         </article>
 
         <article id="bolo" class="card-sobremesa">
-          <img src="./assets/images/image-cake-desktop.jpg" alt="cake ícone">
+          <img src="./assets/images/image-cake-desktop.jpg" alt="cake ícone" class="imagem-produto">
           <div class="adicionar-carrinho">
             <span onclick="adicionarProduto('bolo')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho">
               Adicionar ao Carrinho
@@ -92,15 +92,15 @@
           </div>
         </article>
 
-        <article id="creme" class="card-sobremesa">
-          <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="creme-brulee ícone" />
+        <article id="crème brûlée" class="card-sobremesa">
+          <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="creme-brulee ícone" class="imagem-produto">
           <div class="adicionar-carrinho">
-            <span onclick="adicionarProduto('creme')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+            <span onclick="adicionarProduto('crème brûlée')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
               Adicionar ao Carrinho
             </span>
           </div>
           <div class="modificar-carrinho hidden">
-            <span onclick="adicionarProduto('creme')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
+            <span onclick="adicionarProduto('crème brûlée')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
               Adicionar ao Carrinho
             </span>
           </div>
@@ -113,7 +113,7 @@
         </article>
 
         <article id="macaron" class="card-sobremesa">
-          <img src="./assets/images/image-macaron-desktop.jpg" alt="macaron ícone" />
+          <img src="./assets/images/image-macaron-desktop.jpg" alt="macaron ícone" class="imagem-produto" />
           <div class="adicionar-carrinho">
             <span onclick="adicionarProduto('macaron')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho" />
               Adicionar ao Carrinho
@@ -132,7 +132,7 @@
         </article>
 
         <article id="torta" class="card-sobremesa">
-          <img src="./assets/images/image-meringue-desktop.jpg" alt="meringue ícone">
+          <img src="./assets/images/image-meringue-desktop.jpg" alt="meringue ícone" class="imagem-produto">
           <div class="adicionar-carrinho">
             <span onclick="adicionarProduto('torta')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho">
               Adicionar ao Carrinho
@@ -151,7 +151,7 @@
         </article>
 
         <article id="pannaCotta" class="card-sobremesa">
-          <img src="./assets/images/image-panna-cotta-desktop.jpg" alt="panna-cotta ícone">
+          <img src="./assets/images/image-panna-cotta-desktop.jpg" alt="panna-cotta ícone" class="imagem-produto">
           <div class="adicionar-carrinho">
             <span onclick="adicionarProduto('pannaCotta')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho">
               Adicionar ao Carrinho
@@ -170,7 +170,7 @@
         </article>
 
         <article id="tiramisu" class="card-sobremesa">
-          <img src="./assets/images/image-tiramisu-desktop.jpg" alt="tiramisu ícone">
+          <img src="./assets/images/image-tiramisu-desktop.jpg" alt="tiramisu ícone" class="imagem-produto">
           <div class="adicionar-carrinho">
             <span onclick="adicionarProduto('tiramisu')"><img src="./assets/images/icon-add-to-cart.svg" alt="Adicionar ao carrinho">
               Adicionar ao Carrinho
@@ -207,11 +207,13 @@
   </main>
   <div id="modal" class="modal">
     <div id="modal-content">
-
       <img src="./assets/images/icon-order-confirmed.svg" alt="confirmar-compra-icon">
       <h2>Compra Confirmada</h2>
       <p>Esperamos que goste de sua comida!</p>
-      <button>fecha logo cara sksksk</button>
+      <div id="produtos-confirmar-compra">
+      </div>
+
+      <button>Começar nova compra</button>
     </div>
   </div id="modal-confirmar-compra">
 </body>

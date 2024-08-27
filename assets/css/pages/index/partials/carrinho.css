@@ -17,28 +17,29 @@
   flex-direction: row;
 }
 
-#elementos-carrinho > .produto-carrinho-container > .titulo-produto {
+.titulo-produto {
   font-size: var(--paragraph);
   color: var(--rose-900);
   font-weight: 600;
 }
 #elementos-carrinho .produto-carrinho-detalhes {
   display: flex;
-  gap: 1rem;
+  gap: 1.3rem;
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   font-size: 14px;
 }
 
-#elementos-carrinho .produto-carrinho-detalhes > .unidade-produto {
+.unidade-produto {
   color: var(--red);
   font-weight: 600;
 }
 
-#elementos-carrinho .produto-carrinho-detalhes > .preco-produto {
+.preco-produto {
   opacity: 0.7;
   font-weight: 400;
 }
-#elementos-carrinho .produto-carrinho-detalhes > .preco-total {
+.preco-total {
   color: var(--rose-500);
   font-weight: 600;
 }

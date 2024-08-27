@@ -36,6 +36,7 @@ class Carrinho {
   obterProdutos() {
     return this.produtos;
   }
+  
 }
 
 const DataManager = new Carrinho();
